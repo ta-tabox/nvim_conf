@@ -1,6 +1,5 @@
 local opt = vim.opt
 
-opt.termguicolors = true
 opt.timeoutlen = 300 -- mappingの待機時間
 opt.ttimeoutlen = 1 -- key codesの待機時間
 opt.updatetime = 500 -- キーの入力待機時間

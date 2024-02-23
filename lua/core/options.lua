@@ -7,8 +7,11 @@ opt.updatetime = 500 -- キーの入力待機時間
 opt.cursorline = true
 opt.clipboard = { "unnamed", "unnamedplus" } -- クリップボード連結
 opt.history = 200 -- command history
-opt.smartindent = true -- オートインデント
 opt.backspace = {"indent", "eol", "start"}
+
+-- インデント
+opt.autoindent = true
+opt.smartindent = true
 
 -- 検索結果 --
 opt.hlsearch = true
@@ -21,10 +24,12 @@ opt.wrapscan = true -- 検索時最後まで行ったら最初に戻る
 if not vim.g.vscode then
     opt.title = true
     opt.number = true
-    opt.signcolumn = "yes" -- 目印桁を表示
-    opt.tabstop = 4 -- デフォルトのタブ挿入時の空白数
-    opt.shiftwidth = 4 -- 新しい行挿入時の空格の数
+    opt.signcolumn = "auto" -- 目印桁を表示
+    opt.tabstop = 4 -- tab時の見かけのスペース数
+    opt.shiftwidth = 4 -- 自動的に挿入される量
     opt.expandtab = true
     opt.laststatus = 2
+    opt.showmatch = true
     opt.filetype = "plugin", "indent", "on"
 end
+

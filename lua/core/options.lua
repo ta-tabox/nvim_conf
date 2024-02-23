@@ -6,7 +6,7 @@ opt.termguicolors = true
 opt.timeoutlen = 300
 opt.updatetime = 500 -- キーの入力待機時間
 opt.cursorline = true
-opt.clipboard = "unnamedplus"
+opt.clipboard = { "unnamed", "unnamedplus" } -- クリップボード連結
 opt.history = 200 -- command history 
 opt.smartindent = true -- オートインデント
 opt.backspace = {"indent", "eol", "start"}
@@ -19,7 +19,6 @@ opt.smartcase = true -- 検索文字列に大文字が含まれてる場合は�
 opt.wrapscan = true -- 検索時最後まで行ったら最初に戻る
 
 -- Skip for VSCode
-
 if not vim.g.vscode then
     opt.syntax = "on"
     opt.title = true

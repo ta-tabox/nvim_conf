@@ -49,7 +49,7 @@ keymap("n", "<Leader>k", "<C-w>k", default_opts)
 keymap("n", "<Leader>l", "<C-w>l", default_opts)
 
 -- yank
-keymap("n", "<C-p>", '"0p', default_opts)
+keymap("n", "<Leader>p", '"0p', default_opts)
 
 -- ハイライトを消す
 keymap("n", "<ESC>", "<CMD>nohlsearch<CR><ESC>", opts("No highlight search"))

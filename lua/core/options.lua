@@ -1,7 +1,5 @@
 local opt = vim.opt
 
-opt.encoding = "utf-8"
-opt.fileencoding = "utf-8"
 opt.termguicolors = true
 opt.timeoutlen = 300
 opt.updatetime = 500 -- キーの入力待機時間

@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+opt.syntax = "on"
 opt.timeoutlen = 300 -- mappingの待機時間
 opt.ttimeoutlen = 1 -- key codesの待機時間
 opt.updatetime = 500 -- キーの入力待機時間
@@ -18,11 +19,11 @@ opt.wrapscan = true -- 検索時最後まで行ったら最初に戻る
 
 -- Skip for VSCode
 if not vim.g.vscode then
-    opt.syntax = "on"
     opt.title = true
     opt.number = true
-    opt.tabstop = 4
-    opt.shiftwidth = 4
+    opt.signcolumn = "yes" -- 目印桁を表示
+    opt.tabstop = 4 -- デフォルトのタブ挿入時の空白数
+    opt.shiftwidth = 4 -- 新しい行挿入時の空格の数
     opt.expandtab = true
     opt.laststatus = 2
     opt.filetype = "plugin", "indent", "on"

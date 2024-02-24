@@ -1,3 +1,5 @@
+vim.loader.enable()
+
 require("core.lazy")
 require("core.base")
 require("core.autocmds")

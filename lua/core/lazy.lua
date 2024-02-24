@@ -11,15 +11,21 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins", {
-  performance = {
-    rtp = {
-      disabled_plugins = {
---        "netrw",
---        "netrwPlugin",
---        "netrwSettings",
---        "netrwFileHandlers",
-      },
+local opts = {
+    defaults = {
+        lazy = true,
     },
-  },
-})
+    performance = {
+        rtp = {
+            disabled_plugins = {
+        --        "netrw",
+        --        "netrwPlugin",
+        --        "netrwSettings",
+        --        "netrwFileHandlers",
+            },
+        },
+    },
+}
+
+-- Any lua file in ~/.config/nvim/lua/plugins/*.lua will be automatically merged in the main plugin spec
+require("lazy").setup("plugins", opts)

@@ -36,12 +36,6 @@ keymap("n", "gj", "j", default_opts)
 keymap("n", "<C-j>", "5j", default_opts)
 keymap("n", "<C-k>", "5k", default_opts)
 
--- バッファの移動
-keymap("n", "[b", ":bprevious<CR>", default_opts)
-keymap("n", "]b", ":bnext<CR>", default_opts)
-keymap("n", "[B", ":bfirst<CR>", default_opts)
-keymap("n", "]B", ":blast<CR>", default_opts)
-
 -- window navigation
 keymap("n", "<Leader>h", "<C-w>h", default_opts)
 keymap("n", "<Leader>j", "<C-w>j", default_opts)
@@ -72,7 +66,7 @@ keymap("i", "<C-a>", "<Esc>0i", opts("Move to the last of line"))
 keymap("i", "<C-e>", "<Esc>$a", opts("Move to the first of line"))
 
 
--- Visual -- 
+-- Visual --
 -- ビジュアルモードで < > キーによるインデント後にビジュアルモードが解除されないようにする
 keymap("v", "<", "<gv", default_opts)
 keymap("v", ">", ">gv", default_opts)

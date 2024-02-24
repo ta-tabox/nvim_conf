@@ -2,5 +2,7 @@
   "LazyVim": { "branch": "main", "commit": "91126b9896bebcea9a21bce43be4e613e7607164" },
   "dracula": { "branch": "master", "commit": "6495b4ff40479ec7705addb4ea800ec308026648" },
   "lazy.nvim": { "branch": "main", "commit": "aedcd79811d491b60d0a6577a9c1701063c2a609" },
-  "nvim-autopairs": { "branch": "master", "commit": "90f824d37c0cb079d2764927e73af77faa9ba0ef" }
+  "mini.nvim": { "branch": "main", "commit": "b7403ad0c2a4dab777244171ca1b7e8c89696584" },
+  "nvim-autopairs": { "branch": "master", "commit": "90f824d37c0cb079d2764927e73af77faa9ba0ef" },
+  "vim-polyglot": { "branch": "master", "commit": "bc8a81d3592dab86334f27d1d43c080ebf680d42" }
 }
